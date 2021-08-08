@@ -17,8 +17,6 @@ def weights_init(m,type = None):
     if type == "prior":
         nn.init.uniform_(m.weight, a=0.0, b=1.0)
 
-    else:
-        print('%s is not initialized.' %classtype)
 
 
 class CoreNet(nn.Module):

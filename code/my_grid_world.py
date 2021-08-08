@@ -13,13 +13,10 @@ class GridWorld():
         self.state[self.pit] = 2
         self.state[self.goal] = 3
 
-        pit_reward = -10
-        goal_reward = 10
-        normal_reward = -1
 
     def randPair(self):
         while(self.player == None):
-            state = (random.randint(0,3),random.randint(0,3)) ## 1 ##
+            state = (random.randint(0,3),random.randint(0,3))
             if(state != self.pit and state != self.goal):
                 self.player = state
 
